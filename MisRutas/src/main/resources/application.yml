@@ -1,0 +1,20 @@
+aplicacion:
+  nombre: Mis Rutas api
+   
+server:
+  port: 9081
+  servlet:
+    context-path: /misrutas
+  
+
+spring:
+  data:
+    mongodb:
+      database: MisRutas
+      port: 27017
+      host: localhost
+  servlet:    multipart:      enabled: true
+      file-size-threshold: 2KB
+      max-request-size: 215MB
+file:
+  upload-dir: rutas
