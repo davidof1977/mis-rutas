@@ -1,0 +1,18 @@
+aplicacion:
+  nombre: Mis Rutas api
+   
+server:
+  port: 9081
+  servlet:
+    context-path: /misrutas
+  
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://davidof1977:baralo18@davidof1977.4gzm1.mongodb.net/mis-rutas?retryWrites=true&w=majority
+  servlet:    multipart:      enabled: true
+      file-size-threshold: 2KB
+      max-request-size: 215MB
+file:
+  upload-dir: rutas
