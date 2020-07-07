@@ -10,9 +10,7 @@ server:
 spring:
   data:
     mongodb:
-      database: MisRutas
-      port: 27017
-      host: localhost
+      uri: mongodb+srv://davidof1977:baralo18@davidof1977.4gzm1.mongodb.net/mis-rutas?retryWrites=true&w=majority
   servlet:    multipart:      enabled: true
       file-size-threshold: 2KB
       max-request-size: 215MB
