@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" creator="OruxMaps v.7.5.8 GP" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<metadata>
+<name><![CDATA[2020-06-14 20:52]]></name>
+<link href="https://www.oruxmaps.com">
+<text>OruxMaps GP</text>
+</link>
+<time>2020-06-14T18:52:51.543Z</time><bounds maxlat="40.4602338" maxlon="-3.8171053" minlat="40.4527397" minlon="-3.8629818"/>
+</metadata>
+<wpt lat="40.4527397" lon="-3.8171053">
+<ele>0.00</ele>
+<time>2020-06-14T18:52:56.245Z</time>
+<name><![CDATA[0000186]]></name>
+<sym>Waypoint</sym>
+<type>Waypoint</type>
+<extensions>
+<om:oruxmapsextensions xmlns:om="http://www.oruxmaps.com/oruxmapsextensions/1/0">
+<om:ext type="ICON" subtype="0">1</om:ext>
+</om:oruxmapsextensions>
+</extensions>
+</wpt>
+<wpt lat="40.4551317" lon="-3.8205814">
+<ele>0.00</ele>
+<time>2020-06-14T18:53:16.802Z</time>
+<name><![CDATA[0000187]]></name>
+<sym>Waypoint</sym>
+<type>Waypoint</type>
+<extensions>
+<om:oruxmapsextensions xmlns:om="http://www.oruxmaps.com/oruxmapsextensions/1/0">
+<om:ext type="ICON" subtype="0">1</om:ext>
+</om:oruxmapsextensions>
+</extensions>
+</wpt>
+<wpt lat="40.4584542" lon="-3.8259995">
+<ele>0.00</ele>
+<time>2020-06-14T18:53:29.338Z</time>
+<name><![CDATA[0000188]]></name>
+<sym>Waypoint</sym>
+<type>Waypoint</type>
+<extensions>
+<om:oruxmapsextensions xmlns:om="http://www.oruxmaps.com/oruxmapsextensions/1/0">
+<om:ext type="ICON" subtype="0">1</om:ext>
+</om:oruxmapsextensions>
+</extensions>
+</wpt>
+<wpt lat="40.4593155" lon="-3.8274908">
+<ele>0.00</ele>
+<time>2020-06-14T18:53:35.257Z</time>
+<name><![CDATA[0000189]]></name>
+<sym>Waypoint</sym>
+<type>Waypoint</type>
+<extensions>
+<om:oruxmapsextensions xmlns:om="http://www.oruxmaps.com/oruxmapsextensions/1/0">
+<om:ext type="ICON" subtype="0">1</om:ext>
+</om:oruxmapsextensions>
+</extensions>
+</wpt>
+<wpt lat="40.4593563" lon="-3.8332897">
+<ele>0.00</ele>
+<time>2020-06-14T18:53:48.013Z</time>
+<name><![CDATA[0000190]]></name>
+<sym>Waypoint</sym>
+<type>Waypoint</type>
+<extensions>
+<om:oruxmapsextensions xmlns:om="http://www.oruxmaps.com/oruxmapsextensions/1/0">
+<om:ext type="ICON" subtype="0">1</om:ext>
+</om:oruxmapsextensions>
+</extensions>
+</wpt>
+<wpt lat="40.4595930" lon="-3.8362724">
+<ele>0.00</ele>
+<time>2020-06-14T18:53:58.831Z</time>
+<name><![CDATA[0000191]]></name>
+<sym>Waypoint</sym>
+<type>Waypoint</type>
+<extensions>
+<om:oruxmapsextensions xmlns:om="http://www.oruxmaps.com/oruxmapsextensions/1/0">
+<om:ext type="ICON" subtype="0">1</om:ext>
+</om:oruxmapsextensions>
+</extensions>
+</wpt>
+<wpt lat="40.4602338" lon="-3.8388526">
+<ele>0.00</ele>
+<time>2020-06-14T18:54:05.581Z</time>
+<name><![CDATA[0000192]]></name>
+<sym>Waypoint</sym>
+<type>Waypoint</type>
+<extensions>
+<om:oruxmapsextensions xmlns:om="http://www.oruxmaps.com/oruxmapsextensions/1/0">
+<om:ext type="ICON" subtype="0">1</om:ext>
+</om:oruxmapsextensions>
+</extensions>
+</wpt>
+<wpt lat="40.4601522" lon="-3.8401079">
+<ele>0.00</ele>
+<time>2020-06-14T18:54:13.471Z</time>
+<name><![CDATA[0000193]]></name>
+<sym>Waypoint</sym>
+<type>Waypoint</type>
+<extensions>
+<om:oruxmapsextensions xmlns:om="http://www.oruxmaps.com/oruxmapsextensions/1/0">
+<om:ext type="ICON" subtype="0">1</om:ext>
+</om:oruxmapsextensions>
+</extensions>
+</wpt>
+<wpt lat="40.4598298" lon="-3.8411218">
+<ele>0.00</ele>
+<time>2020-06-14T18:54:18.203Z</time>
+<name><![CDATA[0000194]]></name>
+<sym>Waypoint</sym>
+<type>Waypoint</type>
+<extensions>
+<om:oruxmapsextensions xmlns:om="http://www.oruxmaps.com/oruxmapsextensions/1/0">
+<om:ext type="ICON" subtype="0">1</om:ext>
+</om:oruxmapsextensions>
+</extensions>
+</wpt>
+<wpt lat="40.4586747" lon="-3.8438845">
+<ele>0.00</ele>
+<time>2020-06-14T18:54:26.445Z</time>
+<name><![CDATA[0000195]]></name>
+<sym>Waypoint</sym>
+<type>Waypoint</type>
+<extensions>
+<om:oruxmapsextensions xmlns:om="http://www.oruxmaps.com/oruxmapsextensions/1/0">
+<om:ext type="ICON" subtype="0">1</om:ext>
+</om:oruxmapsextensions>
+</extensions>
+</wpt>
+<wpt lat="40.4578134" lon="-3.8453114">
+<ele>0.00</ele>
+<time>2020-06-14T18:54:31.008Z</time>
+<name><![CDATA[0000196]]></name>
+<sym>Waypoint</sym>
+<type>Waypoint</type>
+<extensions>
+<om:oruxmapsextensions xmlns:om="http://www.oruxmaps.com/oruxmapsextensions/1/0">
+<om:ext type="ICON" subtype="0">1</om:ext>
+</om:oruxmapsextensions>
+</extensions>
+</wpt>
+<wpt lat="40.4575277" lon="-3.8484710">
+<ele>0.00</ele>
+<time>2020-06-14T18:54:37.946Z</time>
+<name><![CDATA[0000197]]></name>
+<sym>Waypoint</sym>
+<type>Waypoint</type>
+<extensions>
+<om:oruxmapsextensions xmlns:om="http://www.oruxmaps.com/oruxmapsextensions/1/0">
+<om:ext type="ICON" subtype="0">1</om:ext>
+</om:oruxmapsextensions>
+</extensions>
+</wpt>
+<wpt lat="40.4571563" lon="-3.8493454">
+<ele>0.00</ele>
+<time>2020-06-14T18:54:45.112Z</time>
+<name><![CDATA[0000198]]></name>
+<sym>Waypoint</sym>
+<type>Waypoint</type>
+<extensions>
+<om:oruxmapsextensions xmlns:om="http://www.oruxmaps.com/oruxmapsextensions/1/0">
+<om:ext type="ICON" subtype="0">1</om:ext>
+</om:oruxmapsextensions>
+</extensions>
+</wpt>
+<wpt lat="40.4561440" lon="-3.8517863">
+<ele>0.00</ele>
+<time>2020-06-14T18:54:54.811Z</time>
+<name><![CDATA[0000199]]></name>
+<sym>Waypoint</sym>
+<type>Waypoint</type>
+<extensions>
+<om:oruxmapsextensions xmlns:om="http://www.oruxmaps.com/oruxmapsextensions/1/0">
+<om:ext type="ICON" subtype="0">1</om:ext>
+</om:oruxmapsextensions>
+</extensions>
+</wpt>
+<wpt lat="40.4566991" lon="-3.8520223">
+<ele>0.00</ele>
+<time>2020-06-14T18:55:02.642Z</time>
+<name><![CDATA[0000200]]></name>
+<sym>Waypoint</sym>
+<type>Waypoint</type>
+<extensions>
+<om:oruxmapsextensions xmlns:om="http://www.oruxmaps.com/oruxmapsextensions/1/0">
+<om:ext type="ICON" subtype="0">1</om:ext>
+</om:oruxmapsextensions>
+</extensions>
+</wpt>
+<wpt lat="40.4568093" lon="-3.8528967">
+<ele>0.00</ele>
+<time>2020-06-14T18:55:14.224Z</time>
+<name><![CDATA[0000201]]></name>
+<sym>Waypoint</sym>
+<type>Waypoint</type>
+<extensions>
+<om:oruxmapsextensions xmlns:om="http://www.oruxmaps.com/oruxmapsextensions/1/0">
+<om:ext type="ICON" subtype="0">1</om:ext>
+</om:oruxmapsextensions>
+</extensions>
+</wpt>
+<wpt lat="40.4586747" lon="-3.8542432">
+<ele>0.00</ele>
+<time>2020-06-14T18:55:21.607Z</time>
+<name><![CDATA[0000202]]></name>
+<sym>Waypoint</sym>
+<type>Waypoint</type>
+<extensions>
+<om:oruxmapsextensions xmlns:om="http://www.oruxmaps.com/oruxmapsextensions/1/0">
+<om:ext type="ICON" subtype="0">1</om:ext>
+</om:oruxmapsextensions>
+</extensions>
+</wpt>
+<wpt lat="40.4593155" lon="-3.8540769">
+<ele>0.00</ele>
+<time>2020-06-14T18:55:28.074Z</time>
+<name><![CDATA[0000203]]></name>
+<sym>Waypoint</sym>
+<type>Waypoint</type>
+<extensions>
+<om:oruxmapsextensions xmlns:om="http://www.oruxmaps.com/oruxmapsextensions/1/0">
+<om:ext type="ICON" subtype="0">1</om:ext>
+</om:oruxmapsextensions>
+</extensions>
+</wpt>
+<wpt lat="40.4602053" lon="-3.8598919">
+<ele>0.00</ele>
+<time>2020-06-14T18:55:39.221Z</time>
+<name><![CDATA[0000204]]></name>
+<sym>Waypoint</sym>
+<type>Waypoint</type>
+<extensions>
+<om:oruxmapsextensions xmlns:om="http://www.oruxmaps.com/oruxmapsextensions/1/0">
+<om:ext type="ICON" subtype="0">1</om:ext>
+</om:oruxmapsextensions>
+</extensions>
+</wpt>
+<wpt lat="40.4588134" lon="-3.8620752">
+<ele>0.00</ele>
+<time>2020-06-14T18:55:53.425Z</time>
+<name><![CDATA[0000205]]></name>
+<sym>Waypoint</sym>
+<type>Waypoint</type>
+<extensions>
+<om:oruxmapsextensions xmlns:om="http://www.oruxmaps.com/oruxmapsextensions/1/0">
+<om:ext type="ICON" subtype="0">1</om:ext>
+</om:oruxmapsextensions>
+</extensions>
+</wpt>
+<wpt lat="40.4589114" lon="-3.8629818">
+<ele>0.00</ele>
+<time>2020-06-14T18:56:02.019Z</time>
+<name><![CDATA[0000206]]></name>
+<sym>Waypoint</sym>
+<type>Waypoint</type>
+<extensions>
+<om:oruxmapsextensions xmlns:om="http://www.oruxmaps.com/oruxmapsextensions/1/0">
+<om:ext type="ICON" subtype="0">1</om:ext>
+</om:oruxmapsextensions>
+</extensions>
+</wpt>
+<trk>
+<name><![CDATA[2020-06-14 20:52]]></name>
+<desc><![CDATA[<p>Distancia recorrida: 4,6 km (00:00)<br/>Altura Mínima: 0 m<br/>Altura Máxima: 0 m<br/></p><hr align="center" width="480" style="height: 2px; width: 517px"/>]]></desc>
+<type>Indefinido</type>
+<extensions>
+<om:oruxmapsextensions xmlns:om="http://www.oruxmaps.com/oruxmapsextensions/1/0">
+<om:ext type="TYPE" subtype="0">0</om:ext>
+<om:ext type="DIFFICULTY">0</om:ext>
+</om:oruxmapsextensions>
+</extensions>
+<trkseg>
+<trkpt lat="40.4527397" lon="-3.8171053">
+<ele>0.00</ele>
+</trkpt>
+<trkpt lat="40.4551317" lon="-3.8205814">
+<ele>0.00</ele>
+</trkpt>
+<trkpt lat="40.4584542" lon="-3.8259995">
+<ele>0.00</ele>
+</trkpt>
+<trkpt lat="40.4593155" lon="-3.8274908">
+<ele>0.00</ele>
+</trkpt>
+<trkpt lat="40.4593563" lon="-3.8332897">
+<ele>0.00</ele>
+</trkpt>
+<trkpt lat="40.4595930" lon="-3.8362724">
+<ele>0.00</ele>
+</trkpt>
+<trkpt lat="40.4602338" lon="-3.8388526">
+<ele>0.00</ele>
+</trkpt>
+<trkpt lat="40.4601522" lon="-3.8401079">
+<ele>0.00</ele>
+</trkpt>
+<trkpt lat="40.4598298" lon="-3.8411218">
+<ele>0.00</ele>
+</trkpt>
+<trkpt lat="40.4586747" lon="-3.8438845">
+<ele>0.00</ele>
+</trkpt>
+<trkpt lat="40.4578134" lon="-3.8453114">
+<ele>0.00</ele>
+</trkpt>
+<trkpt lat="40.4575277" lon="-3.8484710">
+<ele>0.00</ele>
+</trkpt>
+<trkpt lat="40.4571563" lon="-3.8493454">
+<ele>0.00</ele>
+</trkpt>
+<trkpt lat="40.4561440" lon="-3.8517863">
+<ele>0.00</ele>
+</trkpt>
+<trkpt lat="40.4566991" lon="-3.8520223">
+<ele>0.00</ele>
+</trkpt>
+<trkpt lat="40.4568093" lon="-3.8528967">
+<ele>0.00</ele>
+</trkpt>
+<trkpt lat="40.4586747" lon="-3.8542432">
+<ele>0.00</ele>
+</trkpt>
+<trkpt lat="40.4593155" lon="-3.8540769">
+<ele>0.00</ele>
+</trkpt>
+<trkpt lat="40.4602053" lon="-3.8598919">
+<ele>0.00</ele>
+</trkpt>
+<trkpt lat="40.4588134" lon="-3.8620752">
+<ele>0.00</ele>
+</trkpt>
+<trkpt lat="40.4589114" lon="-3.8629818">
+<ele>0.00</ele>
+</trkpt>
+</trkseg>
+</trk>
+</gpx>
