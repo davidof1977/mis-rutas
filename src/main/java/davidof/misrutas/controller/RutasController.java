@@ -36,7 +36,7 @@ import davidof.misrutas.service.FileStorageService;
 import davidof.misrutas.service.RutaService;
 import io.jsonwebtoken.Jwts;
 
-@CrossOrigin(origins = "*", maxAge = 3600)
+@CrossOrigin(origins = "*", maxAge = 3600, allowedHeaders = "*")
 @RequestMapping("/api")
 @RestController
 public class RutasController {
