@@ -16,6 +16,7 @@ public class Ruta {
 	private String desc;
 	private LocalDate fecha;
 	private List<String> imagenes;
+	private byte[] fichero;
 	public String getId() {
 		return id;
 	}
@@ -28,12 +29,7 @@ public class Ruta {
 	public void setUsuario(String usuario) {
 		this.usuario = usuario;
 	}
-	public String getGpxFile() {
-		return gpxFile;
-	}
-	public void setGpxFile(String gpxFile) {
-		this.gpxFile = gpxFile;
-	}
+
 	public float getLatitud() {
 		return latitud;
 	}
@@ -69,5 +65,17 @@ public class Ruta {
 	}
 	public void setDesc(String desc) {
 		this.desc = desc;
+	}
+	public byte[] getFichero() {
+		return fichero;
+	}
+	public void setFichero(byte[] fichero) {
+		this.fichero = fichero;
+	}
+	public String getGpxFile() {
+		return gpxFile;
+	}
+	public void setGpxFile(String gpxFile) {
+		this.gpxFile = gpxFile;
 	}
 }

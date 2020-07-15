@@ -8,6 +8,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 import org.springframework.stereotype.Service;
@@ -54,17 +55,17 @@ public class FileStorageService {
         }
     }
 
-    public Resource loadFileAsResource(String fileName) throws Exception {
+    public Resource loadFileAsResource(byte[] bytes) throws Exception {
         try {
-            Path filePath = this.fileStorageLocation.resolve(fileName).normalize();
-            Resource resource = new UrlResource(filePath.toUri());
+            Resource resource = new ByteArrayResource(bytes);
+
             if(resource.exists()) {
                 return resource;
             } else {
-                throw new Exception("File not found " + fileName);
+                throw new Exception("El recurso no existe");
             }
         } catch (MalformedURLException ex) {
-            throw new Exception("File not found " + fileName, ex);
+            throw new Exception("Falmormed url");
         }
     }
 }

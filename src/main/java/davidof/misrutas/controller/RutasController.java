@@ -1,9 +1,11 @@
 package davidof.misrutas.controller;
 
-import java.io.BufferedReader;
+import static davidof.misrutas.security.Constantes.SUPER_SECRET_KEY;
+import static davidof.misrutas.security.Constantes.TOKEN_BEARER_PREFIX;
+
 import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.util.List;
@@ -16,11 +18,13 @@ import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -30,6 +34,7 @@ import org.w3c.dom.Document;
 import davidof.misrutas.repository.entity.Ruta;
 import davidof.misrutas.service.FileStorageService;
 import davidof.misrutas.service.RutaService;
+import io.jsonwebtoken.Jwts;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RequestMapping("/api")
@@ -43,9 +48,9 @@ public class RutasController {
 		@Autowired
 		private FileStorageService fileStorageService;
 		
-		@GetMapping("/rutas/{usuario}")
-		public List<Ruta> obtenerRutasUsuario(@PathVariable String usuario) {
-			List<Ruta> rutas = service.obtenerRutasUsuario(usuario);
+		@GetMapping("/rutas")
+		public List<Ruta> obtenerRutasUsuario(@RequestHeader("authorization") String jwt) {
+			List<Ruta> rutas = service.obtenerRutasUsuario(getUserFormJWT(jwt));
 
 			return rutas;
 		}
@@ -55,17 +60,9 @@ public class RutasController {
 		public Ruta obtenerRuta(@PathVariable String id) {
 			Ruta ruta = service.obtenerRuta(id);
 			try {
-				File f = Paths.get(fileStorageService.getPath() + "\\" + ruta.getGpxFile()).toFile();
-				
-				FileReader reader = new FileReader(f);
-				BufferedReader b = new BufferedReader(reader);
-				String cadena;
-				String aux="";
-				while((cadena = b.readLine())!=null) {
-			          aux = aux + cadena;
-			      }
-			      b.close();
-				ruta.setGpxFile(aux);
+			    byte[] bytes = ruta.getFichero();
+			      
+				ruta.setGpxFile(new String(bytes));
 			}catch(Exception e) {
 				e.printStackTrace();
 			}
@@ -79,22 +76,22 @@ public class RutasController {
 
 		 @PostMapping("/rutas/uploadfile")
 		    public void uploadFile(@RequestParam("file") MultipartFile file, 
-		    		@RequestParam("usuario") String usuario,
 		    		@RequestParam("titulo") String titulo,
-		    		@RequestParam("desc") String desc) throws Exception {
+		    		@RequestParam("desc") String desc,
+		    		@RequestHeader("authorization") String jwt) throws Exception {
 			 
 				try {
-			        String fileName = fileStorageService.storeFile(file);
-					File f = Paths.get(fileStorageService.getPath() + "\\" + fileName).toFile();
-					Document doc =	DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(f);
+
+					InputStream is = file.getResource().getInputStream();
+					Document doc =	DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(is);
 					Ruta ruta = new Ruta();
 					ruta.setLatitud(new Float(doc.getElementsByTagName("trkpt").item(0).getAttributes().getNamedItem("lat").getNodeValue()));
 					ruta.setLongitud(new Float(doc.getElementsByTagName("trkpt").item(0).getAttributes().getNamedItem("lon").getNodeValue()));
 					ruta.setFecha(LocalDate.parse(doc.getElementsByTagName("time").item(0).getTextContent().substring(0,10)));
 					ruta.setDesc(desc);
-					ruta.setGpxFile(fileName);
 					ruta.setTitulo(titulo);
-					ruta.setUsuario(usuario);
+					ruta.setUsuario(getUserFormJWT(jwt));
+					ruta.setFichero(file.getBytes());
 					service.guardar(ruta);
 
 				}catch(Exception ex) {
@@ -109,7 +106,7 @@ public class RutasController {
 		        Resource resource=null;
 				try {
 					Ruta ruta = service.obtenerRuta(id);
-					resource = fileStorageService.loadFileAsResource(ruta.getGpxFile());
+					resource = fileStorageService.loadFileAsResource(ruta.getFichero());
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -133,5 +130,16 @@ public class RutasController {
 		                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + resource.getFilename() + "\"")
 		                .body(resource);
 		    }
-		
+			/**
+			 * @param jwt
+			 * @return
+			 */
+			private String getUserFormJWT(String jwt) {
+				String usuario = Jwts.parser()
+						.setSigningKey(SUPER_SECRET_KEY)
+						.parseClaimsJws(jwt.replace(TOKEN_BEARER_PREFIX, ""))
+						.getBody()
+						.getSubject();
+				return usuario;
+			}
 }
